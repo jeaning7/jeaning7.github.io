@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	border:0;
+	padding:0;
+	font-size: 100%;
+	outline:0;
+	vertical-align: 0;
+	
+}
+:root{
+	--main-bule1: #1DD3B0;
+	--main-blue2: #086375;
+	--main-green1: #B2FE9E;
+	--main-green2: #AFFC41;
+	--main-purple1: #8367C7;
+	--main-purple2: #5612AD;
+	--main-purple3: #3C1642;
+}
+html{
+	font-family: Futura;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+h1{
+	font-size: 42px;
+	font-weight:600;
+	color:black;
+	letter-spacing: 2px;
+}
+h2{
+	font-size: 45px;
+	font-weight:700;
+	color:black;
+}
+h3{
+	font-size: 10px;
+	color: var(--main-bule1);
+	letter-spacing: 1px;
+}
+p{
+	font-size: 18px;
+	color:black;
+	letter-spacing: 1px;
+}
+a{
+	font-size: 10px;
+	color:black;
+	font-style: normal;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.re{
+	font-size: 30px;
+	color: var(--main-bule1);
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);  
+	display: block;
+	position: absolute;
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
+	text-transform: uppercase;
+	position: absolute;
+	top: 380px;
+	left: 82px;
+}
+
+nav{
+	position: fixed;
+	line-height:40px;
+	width: 100%;
+	background-color: white;
+}
+.nav-right{
+	position: fixed;
+	left: 210px;
+	top:27px;
+}
+.nav-right a{
+	margin-right: 48px;;
+}
+.rec-little div{
+	background-color: var(--main-bule1);
+	height: 3px;
+	width: 17px;
+	margin-right: 48px;
+	
+}
+.rec-little1{
+	position: fixed;
+	top: 60px;
+	left: 210px;
+}
+.rec-little2{
+	margin-left:204px;
+	position: fixed;
+	top: 60px;
+	left: 120px;
+}
+.rec-little3{
+	margin-left:232px;
+	position: fixed;
+	top: 60px;
+}
+.wrapper-content{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	/* margin-left: 140px;
+	margin-right: 140px; */
+}
+.landing-left{
+	position: absolute;
+	top: 454px;
+	left: 105px;
+	text-align: left;
+}
+/* .landing-left2 h1{ */
+	/* margin-top: 96px;
+	margin-left: 28px; */
+	/* position: absolute;
+	top: 605px;
+	left: 140px; */
+	/* display: flex; */
+/* } */
+.landing-left p{
+	margin-top: 13px;
+}
+.landing-right{
+	/* position: absolute; */
+	display: float;
+	text-align: right;
+	/* margin-right: 105px;
+	margin-top: 74px; */
+}
+.picture>img{
+	height: auto;
+	width: 890px;
+	/* position: absolute; */
+	margin-right: 105px;
+	margin-top: 74px;
+	text-align: right;
+	
+	/* display: flex; */
+
+}
