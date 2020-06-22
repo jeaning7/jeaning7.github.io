@@ -18,6 +18,14 @@
 	--main-purple2: #5612AD;
 	--main-purple3: #3C1642;
 }
+::-moz-selection {
+	background:var(--main-purple1);
+	color: #ffffff;
+  }
+  ::selection {
+	background: var(--main-purple1);
+	color: #ffffff;
+  }
 html{
 	font-family: Futura;
 }
@@ -47,7 +55,7 @@ p{
 	letter-spacing: 1px;
 }
 a{
-	font-size: 10px;
+	font-size: 11px;
 	color:black;
 	font-style: normal;
 	letter-spacing: 1px;
@@ -72,12 +80,13 @@ nav{
 	position: fixed;
 	line-height:40px;
 	width: 100%;
+	height: 50px;
 	background-color: white;
 }
 .nav-right{
 	position: fixed;
 	left: 210px;
-	top:27px;
+	top:20px;
 }
 .nav-right a{
 	margin-right: 48px;;
@@ -91,19 +100,19 @@ nav{
 }
 .rec-little1{
 	position: fixed;
-	top: 60px;
+	top: 50px;
 	left: 210px;
 }
 .rec-little2{
-	margin-left:204px;
+	margin-left:209px;
 	position: fixed;
-	top: 60px;
+	top: 50px;
 	left: 120px;
 }
 .rec-little3{
-	margin-left:232px;
+	margin-left:242px;
 	position: fixed;
-	top: 60px;
+	top: 50px;
 }
 .wrapper-content{
 	width: 100%;
@@ -132,17 +141,17 @@ nav{
 }
 .landing-right{
 	/* position: absolute; */
-	display: float;
+	/* display: float; */
 	text-align: right;
 	/* margin-right: 105px;
 	margin-top: 74px; */
 }
 .picture>img{
 	height: auto;
-	width: 890px;
+	width: 930px;
 	/* position: absolute; */
-	margin-right: 105px;
-	margin-top: 74px;
+	/* margin-right: 105px; */
+	margin-top: 54px;
 	text-align: right;
 	
 	/* display: flex; */
