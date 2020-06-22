@@ -72,7 +72,7 @@ a{
 	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
 	text-transform: uppercase;
 	position: absolute;
-	top: 380px;
+	top: 348px;
 	left: 82px;
 }
 
@@ -124,7 +124,7 @@ nav{
 }
 .landing-left{
 	position: absolute;
-	top: 454px;
+	top: 420px;
 	left: 105px;
 	text-align: left;
 }
@@ -156,4 +156,9 @@ nav{
 	
 	/* display: flex; */
 
+}
+.downwards>img{
+	height: auto;
+	width: 68px;
+	margin-top: 88px;
 }
