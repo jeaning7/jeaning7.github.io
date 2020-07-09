@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" charset="utf-8" rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/View3.png"/>
+    <div class="wrapper-content">
+        <h1>MTR Mobile: <br>Trip Planner and Traffic News<br>——A UX Case Study</h1>
+        <h2>The Situation</h2>
+        <p>
+            Whether commuting or traveling, the metro is a great way to choose. In big cities, the subway network especially convenient without traffic jams. </p>
+        <p>
+            <span class="note">
+                MTR is recognized as the world's leading railway system. It is known for its safety, reliability, excellent customer service and high cost efficiency. All passenger transport services carry an average of 5.9 million passengers per day on every Sunday.
+    MTR Mobile is a smart phone application commissioned by MTR, which was launched in 2010.
+            </span>
+        </p>
+        <p> The story begins with a journey to HK. MTR Corporation has contracted most of the railway business in HK, which is the transportation that most HK citizens and tourists will choose. However, compared with HK's extensive railway lines, MTR Mobile is not satisfactory, especially the tools, which are the most important functions for users. First of all, when I used it to plan routes, it was not very smooth. Secondly, the HK railways do not popularize QR code entry, but the entry gates that support QR codes have begun to be deployed. This requires both software and hardware to work together, so QR code is also urgently needed by MTR Mobile and will soon become very important functions.
+        </p>
+        <p>
+            Based on these, I decided to conduct further research in order to discover other common pain points and revise the design of tools branch of MTR Mobile.
+        </p>
+        <h2>The Goal</h2>
+        <p>
+            <span class="list">
+                ·  Determine if my confusion is common.<br>
+                ·  Test the frequently used tools to uncover issues.<br>
+                ·  Understand the discover ability issues in interfaces.<br>
+                ·  Propose design solutions and validate them. 
+            </span>
+        </p>
+        <h2>The Plan</h2>
+        <p>
+            I decided to run a design sprint, as a side-project after work. I followed GV’s process for this sprint.
+        </p>
+        <img src="img/process.png"/>
+        <p>
+            <span class="note">
+                *The sprint is a five-day process for answering critical business questions through design, prototyping, and testing ideas with customers.
+            </span>
+        </p>
+        <p>
+            Because I had to work during the day, this five-day front might be longer. I tried to improve my efficiency and still decided to complete it within a week, of course including the weekend.          
+        </p>
+        <h2>Understand, Define</h2>
+        <h3>Search Information</h3>
+        <p>I need to ascertain what the problems exactly are. </p>
+        <p>
+            Because it was during the epidemic, it was inconvenient for me to go out for field research. I decided to read reviews in App store and Google play to understand the general confusion of users.
+        </p>
+        <img src="img/app store.jpg"/>
+        <p><span class="mark">*From App Store</span></p>
+        <img src="img/Google play.jpg"/>
+        <p><span class="mark">*From Google Play Store</span></p>
+        <h3>Usability Inspection</h3>
+        <p>
+            After that, I did a usability inspection afterwards, reviewing the current system against a set of heuristics. 
+        </p>
+        <h4>Structure Analysis</h4>
+        <p>
+            I carefully browse the page of the app and had more understanding of it after doing that. Below are the main features of MTR Tools:
+        </p>
+        <div class="imgandtext">
+            <div id="img-left"><img src="img/homepage.jpeg"/></div>
+            <div id="text-right">
+                <p>
+                    <span class="bold">· Trip Plan</span><br>
+                    Instantly provide MTR ride routes and other public transport connection options.
+                </p>
+                <p>
+                    <span class="bold">· Traffic News</span><br>
+                    The Traffic News function displays the real-time train status of each MTR route in green, yellow or red. 
+                </p>
+                <p>
+                    <span class="bold">· Alighting Remind</span><br>
+                    There are tips for transfer / drop-off, you will know when you get there.
+                </p>
+                <p>
+                    <span class="bold">· Next Train---download another app</span><br>
+                    You can check the arrival time of the next train of MTR.
+                </p>
+            </div>
+           
+        </div>
+        <p>
+            In order to get a clearer view of the system, I laid out the functional architecture of MTR Tools.
+        </p>
+        <img src="img/tools structure.png"/>
+        <h4>Experience the Use</h4>
+        <p>
+            By observing comments and empathizing, I found that “route planner” and “traffic news” are the most needed tools. The function of the “next train” is also widely needed, but it cannot be supported in MTR Mobile, which should be integrated. I decided to make “route planner” and “traffic news” as my main revision work.
+        </p>
+        <p>I also assumed a scenario to experience and use. </p>
+        <p>
+            <span class="note">
+                “I am a tourist from the Mainland to HK and want to check the metro route from the airport to Central station and follow the route.”
+            </span>
+        </p>
+        <p>
+            <span class="note2">
+                *The scenario assumption is based on that HK is a tourist city, and many tourists visit every year, especially from the mainland.
+            </span>
+        </p>
+        <p>Here is my journey map of planning the route:</p>
+        <img src="img/trip plan map.png"/>
+        <p><span class="bold">The following is my experience and analysis after using it.</span></p>
+        <p>
+            Actually, there are multiple ways to choose your departure and destination：
+        </p>
+        <p>
+            <span class="list">
+            ·  Select from metro line,<br>
+            ·  Select from history,<br>
+            ·  Choose on the map,<br>
+            ·  Type in. 
+            </span>
+        </p>
+        <img src="img/ways of planning.jpg"/>
+        <p><span class="mark">*ways of choose departure and destination </span></p>
+        <p>
+            They are set by totally different logic. For example, if you want to select a station by selecting a metro line, you need to tap the “from” first, after that the line list appear (the map is covered), then choose your line and your station on it. However, if you need to choose a station from the line map, you should tap the station first, then there will be a window appearing beside the station and you can select “from” or “to” in this window.
+        </p>
+        <p>
+            After completing the departure and destination, it’s time to show me the route. But one confusing thing is that why there are three button below the chart? All I wanted is the route as soon as possible. As for the two other button, If I choose the wrong one, just choose again. Why choose to clear it? I don’t even know which line to take, Why should I check the first and last shift time? 
+        </p>
+        <img src="img/3buttons.jpg"/>
+        <p><span class="mark">*three buttons &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp *narrow route area </span></p>
+        <p>
+            Finally I arrived the route interface. But the route area was uncomfortably narrow. It is displayed in a short screen interval, I can only swipe back and forth to view the complete route. I can’t see the whole picture, and I can’t save it. What should I do to remember the route?
+        </p>
+        <h3>Usability Tests</h3>
+        <p>
+            During this time, I was really inconvenient to find the right person to do a lot offline usability test. So I decided to take some online test with my friends. I really thanked them for helping me to carry the study on.
+        </p>
+        <p><span class="note"><span class="bold">Friend1 </span>: He is studying for his master’s degree in HKU, going to school by metro for daily routine.</span>
+          <span class="note"><span class="bold">Friend2 </span>: She is my roommate, I told her to assume herself as a tourist in HK.</span>
+          <span class="note"><span class="bold">Friend3 </span>: She is my best friend, I set her the assume as Friend2.</span>
+          <span class="note"><span class="bold">Friend4 </span>: He is Friend1’s classmate who is working as an intern in HK. He goes to work from his rental room by metro and city bus.</span>
+          <span class="note"><span class="bold">Friend5 </span>: He is Friend1’s father, who is an employee of an insurance company. He occasionally drive and often take the metro.</span></p>
+          <p>
+            I asked my friends to use MTR Mobile while making a video call with me. Here are the tasks I let them perform:
+          </p>
+          <p><span class="list">
+            · Plan your trip from airport to your school/company/sight<br>
+            · Remember the route<br>
+            · Check the line closure and details</span></p>
+          <h3>Test Results Collation</h3>
+          <p>
+            By observing their use and listening to them, I recorded a number of problems and classified them.
+          </p>
+          <img src="img/issues.jpg"/>
+          <p><span class="mark">*Affinity mapping pain points on notebook, each color represents a user</span></p>
+          <p>
+            Then I prioritised each pain point based on its importance to the user as well as its importance to MTR. My assumptions of the importance to users were based on conversations with the testees. My assumptions of the importance to MTR were based on my analysis of their website and marketing materials. Planning the route and viewing information are the most important tools in the app, so the visualization of information is very important for users and MTR, and advertising may be the need to run the app.
+          </p>
+          <img src="img/issues2*2.jpg"/>
+          <p><span class="mark">*Prioritising pain points on a 2x2 matrix</span></p>
+          <h3>Define the Problem</h3>
+          <p>
+            I combined the analysis of my experience and the results of the usability test to summarize four pain points that are more important to users and MTR. I redefined the pain points below. 
+          </p>
+          <p><span class="bold">
+            Pain Point 1: The logic of the ways of choosing “from” and “to” is not unified.
+          </span><br>
+            Route planning is one of the core functions of MTR Mobile, and the selecting departure and destination is the beginning of using this tool. It is very important to make a good first impression, so a smooth selection experience is of great significance to both users and MTR. But in this version the selection is confusing, and a unified logic is needed to allow users to choose at will.
+          </p>
+          <img src="img/select from map.png"/>
+          <p>
+            There is a gap between the designer model and the user mental model in the way of selecting from the map. Users are used to tapping "from" and" to" to set up the departure and destination, so I may need to incorporate this into the interface after tapping.
+          </p>
+          <p><span class="bold">
+            Pain Point 2: The information on the route planning interface hide too deep, making it inconvenient to obtain.
+          </span><br>
+            At the route interface, the effective information is heavily folded and the interface space is wasted. It can directly display the valuable information such as ticket price, travel time, platform information and station information to users.
+          </p>
+          <img src="img/route plan.png"/>
+          <p>
+            This pain point is mainly a problem of unreasonable interface planning. I need to replan the layout of the interface to fully present the valid information to the user. Try to present the entire route as completely as possible and provide the function to save to the local so that users can get and remember the route plan. 
+          </p>
+          <p><span class="bold">
+            Pain Point 3: Product advertising has seriously affected the user experience.
+          </span><br>
+            Advertisements will be placed in most apps, but the negative impact of ads on user experience should be minimized. Ads in the app have even become one of the most criticized defects of users, which is harmful to the reputation of MTR.
+          </p>
+          <img src="img/ads.png"/>
+          <p>
+            Based on these, I should reconsider the way ads are inserted. How can we maintain advertising revenue with a small negative impact on users, or change the economic model of the app, and establish a more win-win operating method. But I think changing operating method may be beyond the scope of my current research, so I still focus on the way in which advertising and user experience live in harmony.
+          </p>
+          <p><span class="bold">
+            Pain Point 4: Traffic information is not clearly communicated, and it is inconvenient to view details.
+          </span><br>
+            Traffic news is also one of the most commonly used tools for users, especially for skilled users who do not need route planning, viewing traffic news may be the biggest motivator for opening apps. However, in the traffic news module, the way information is displayed is distressing, and the detail viewing function lacks user-friendliness.
+          </p>
+          <img src="img/traffic news.png"/>
+          <p>
+            As a notification interface, the information that the user cares most about and wants to see should be integrated so that the user can understand all anomalies at a glance. Information about those lines, stations, and exits that are operating normally should be hidden. On this basis, it can provide functions of custom search and expand information .
+          </p>
+          <h2>Ideating the Solution</h2>
+          <p>
+            After understanding the problem and choosing a target for the study, I got to focus on solutions. This started with inspiration: a review of existing ideas to remix and improve. I thought about the possibility for each pain point and decided the plan by collecting inspiration, combing information and sketching.
+          </p>
+          <p>
+            I came up with several potential solutions to each of the pain points and made some rough UI sketches.
+          </p>
+          <img src="img/sketch1.jpg"/>
+          <p><span class="bold">
+            Pain Point 1: The logic of the ways of choosing “from” and “to” is not unified.
+          </span><br>
+          I drew a flowchart of the execution of the planning tasks and first optimized at the flowchart.
+          </p>
+          <p>
+            I optimized the route planning process so that the selection of departure and destination kept the same logic, that is, the from/to was determined first, and then the choice was made in different ways according to the needs of different users.
+          </p>
+          <p><span id="before">BEFORE</span></p>
+          <img class="plan1" src="img/plan(before).png"/>
+          <p><span id="after">AFTER</span></p>
+          <img class="plan2" src="img/plan(after).png"/>
+          <p><span class="bold">
+            Pain Point 2: The information on the route planning interface hide too deep, making it inconvenient to obtain.
+          </span><br>
+            I made a high-fidelity prototype in sketch, and solved the pain points 1 and 2 together. The following is a comparison of the revised process and with the original version, as well as my analysis on how pain points have been solved.
+          </p>
+          <p>
+              <span id="before2">BEFORE</span>
+              <span id="after2">AFTER</span>
+          </p>
+          <img class="case" src="img/plan.jpg"/>
+          <p><span class="bold">
+            Pain Point 3: Product advertising has seriously affected the user experience.
+          </span><br>
+            I discussed two ways to place ads, which may require higher development costs. But if the removal of advertising is not acceptable, this may be a way to improve the user experience, and also an idea that can benefit MTR.
+          </p>
+          <p>
+            The following is a high-fidelity mockups and analysis.
+          </p>
+          <p>
+            <span id="before2">BEFORE</span>
+            <span id="after2">AFTER</span>
+          </p>
+        <img class="case" src="img/ads.jpg"/>
+        <p><span class="bold">
+            Pain Point 4: Traffic information is not clearly communicated, and it is inconvenient to view details.
+          </span><br>
+            I screened and sorted out the information that traffic news should convey, and reorganized the interface structure, so that the information was expressed more clearly and efficiently. At the same time taking into account the needs of users, jump links for trip planner are added.
+          </p>
+          <p>
+            <span id="before2">BEFORE</span>
+            <span id="after2">AFTER</span>
+          </p>
+          <img class="case" src="img/news.jpg"/>
+          <h2>Validate</h2>
+
+    </div>
+   
+
+
+</body>
+</html>

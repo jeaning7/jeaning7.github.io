@@ -3,41 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <title>Designer Jeaning7</title>
-    <link rel="shortcut icon" type="image/x-ico" href="img/aqgmb-n0ojt-001.ico"/>
+    <link rel="shortcut icon" type="image/x-ico" href="img/logo.png"/>
     <link type="text/css" charset="utf-8" rel="stylesheet" href="main.css">
     <meta name="keywords" content="Designer Jeaning7,设计师赵宁琪"/>
     <meta name="Description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minmum-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- nav bar -->
     <nav>
         <header class="logo"></header>
         <div class="nav-right">
-            <a href="#">ABOUT ME</a>
-            <a href="#">MY WORKS</a>
-            <a href="#">CONTACT ME</a>
-            <div class="rec-little">
-                <div class="rec-little1"></div>
-                <div class="rec-little2"></div>
-                <div class="rec-little3"></div>
+            <div id="aboutme">
+                <a href="#">ABOUT ME</a>  
+                <div class="rec-little rec-little1"></div>
             </div>
+            <div id="myworks">
+                <a href="#">MY WORKS</a>
+                <div class="rec-little rec-little2"></div>
+            </div>
+            <div id="contactme">
+                <a href="#">CONTACT ME</a>
+                <div class="rec-little rec-little3"></div>
+            </div>
+        </div>
+        <div class="nav-toggle">
+            <span id="up"></span>
+            <span id="mid"></span>
+            <span id="down"></span>
+        </div>
+        <div class="mobile-nav">
+            <div class="mobile-nav-rec1"></div>
+            <div class="mobile-nav-rec2"></div>
+            <div class="mobile-nav-rec3"></div>
         </div>
     </nav>
+
+
+    <!-- homepage -->
     <div class="wrapper-content">
-        <div class="re">Hello,</div>
-        <div class="landing-left">
-            <h1>I'm Designer<br>Jeaning7.</h1>
-            <p>UI/UX Design<br>Mobile and web</p>
-            <div class="downwards">
-                <img src="img/downwards.svg"/>
+        <div class="landing">
+            <div class="re">Hello,</div>
+            <div class="landing-left">
+                <h1>I'm Designer<br>Jeaning7.</h1>
+                <p>UI/UX Design<br>Mobile and web</p>
+                <div class="downwards">
+                    <img src="img/downwards.svg"/>
+                    <img src="img/downwards2.svg"/>
+                </div>
+            </div>
+            <div class="landing-right">
+                <div class="picture"> 
+                    <img src="img/picture.png"/>
+                </div>
             </div>
         </div>
-        <div class="landing-right">
-            <div class="picture"> 
-                 <img src="img/picture.png"/>
+
+
+        <!-- about me -->
+        <div class="about">
+            <div class="myphoto">
+                <img src="img/znq2.png"/>
             </div>
-         </div>
+            <div class="introduction">
+                <h2>About Me</h2><br>
+                <p><span id="intro">
+                    My name is Ningqi(Jean) Zhao, and I am an UI/UX Designer based in Great Bay Area. I have a cross-disciplinary background， graduating in design from the School of Architecture of Tianjin University. I have a strong interest in UI/UX and have learned the relevant knowledge and technology by myself. At present, I can complete a variety of design and development work on mobile and web. I am committed to creating convenient, friendly, interesting, and feasible design solutions.
+                </span></p><br>
+                <a  id="resume" href="#">Download My Resume</a>
+            </div>
+        </div>
+
+
+        <!-- my skills -->
+        <div class="skill-page-up" >
+            <div class="skill-box1">
+                <img src="img/App.svg"/>
+                <p><br>Mobile Design</p>
+            </div>
+            <div class="skill-box2">
+                <img src="img/website-design.svg"/>
+                <p><br>Web Design</p>
+            </div>
+            <div class="skill-box3">
+                <img src="img/sensor.svg"/>
+                <p><br>3D Modeling</p>
+            </div>
+            <div class="skill-box4">
+                <img src="img/html-file.svg"/>
+                <p><br>Front Coding</p>
+            </div>
+        </div>
+        <div class="skill-page-down">
+            <div class="skill-box5">
+                <img src="img/thinking.svg"/>
+                <p><br>Case Analysis</p>
+            </div>
+            <div class="skill-box6">
+                <img src="img/brainstorming.svg"/>
+                <p><br>Creative Idea</p>
+            </div>
+            <div class="skill-box7">
+                <img src="img/palette.svg"/>
+                <p><br>Freehand Sketch</p>
+            </div>
+            <div class="skill-box8">
+                <img src="img/video.svg"/>
+                <p><br>Video Clip</p>
+            </div>
+        </div>
+
+
+        <!-- my works -->
+        <div class="works">
+            <h2>My Works</h2>
+            <div class="work-content">
+                <a id="work-content1"></a>
+                <a href="mtr/mtr.html" id="work-content2"></a>
+                <a id="work-content3"></a>
+            </div>
+        
+
+        <!-- contact me -->
+        </div>
+        <div class="contact">
+            <div class="contact-wrapper">
+                <div id="rec-contact">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div id="oval"></div>
+            <div class="social">
+                <a href="#"><img src="img/wechat.svg"/><span>Wechat</span></a>
+                <a href="#"><img src="img/mail.svg"/><span>Email</span></a>
+                <a href="#"><img src="img/phone.svg"/><span>Mobile Phone</span></a>
+                <a href="#"><img src="img/facebook.svg"/><span>Facebook</span></a>
+                <a href="#"><img src="img/dribbble.svg"/><span>Dribbble</span></a>
+                <a href="#"><img src="img/skype.svg"/><span>Skype</span></a>
+              </div>       
+        </div>
     </div>
-   
+    
 </body>
 </html>
